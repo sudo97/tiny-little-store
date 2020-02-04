@@ -1,12 +1,15 @@
 # Tiny Little Store
 
-Minimalistic state-management library
-Not really tested in battle; Please feel free to make Pull Requests, I would be happy to see where it can go
+Minimalistic state-management library.
+
+Not really tested in battle;
+
+Please feel free to make Pull Requests, I would be happy to see where it can go
 
 ## Getting Started
 
-`npm install tiny-little-store`
-will get you started
+`npm install tiny-little-store` will get you started.
+
 to init store just do this:
 ```javascript
 const store = createStore(initialState);
