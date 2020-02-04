@@ -8,7 +8,7 @@ Not really tested in battle; Please feel free to make Pull Requests, I would be 
 `npm install tiny-little-store`
 will get you started
 to init store just do this:
-`const store = createStore(initialState);`
+    `const store = createStore(initialState);`
 Where store is an object containing these three methods:
 `{ subscribe, updateStore, getState }`
 You can guess how it works before you continue reading....
