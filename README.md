@@ -1,4 +1,4 @@
-# Project Title
+# Tiny Little Store
 
 Minimalistic state-management library
 Not really tested in battle; Please feel free to make Pull Requests, I would be happy to see where it can go
