@@ -16,6 +16,7 @@ export default initialState => {
       store = { ...store, ...mutation };
     }
     listeners.forEach(l => l(store));
+    return {...store};
   };
 
   const getState = () => ({ ...store });
