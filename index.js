@@ -11,10 +11,8 @@ export default initialState => {
   const updateStore = mutation => {
     if (typeof mutation === "function") {
       const m = mutation(store);
-      console.log(m);
       store = { ...store, ...m };
     } else {
-      console.log(mutation);
       store = { ...store, ...mutation };
     }
     listeners.forEach(l => l(store));
