@@ -16,7 +16,7 @@ const store = createStore(initialState);
 ```
 Where store is an object containing these three methods:
 ```javascript
-const { subscribe, updateStore, getState, mutation } = store;
+const { subscribe, updateStore, getState, mutation, mutationsObj } = store;
 ```
 You can guess how it works before you continue reading....
 
