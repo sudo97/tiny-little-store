@@ -67,7 +67,7 @@ Any mutations you create are syncronous, you can create custom methods(like Vuex
   }
 ```
 Or you can use `updateStore` inside your actions(or code you mutations smarter) to improve performance. 
-Calling to mutations invokes two updates, and then potentially re-renders twice.
+Calling two mutations invokes two updates, and then potentially re-renders twice.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
