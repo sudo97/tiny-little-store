@@ -6,6 +6,8 @@ Not really tested in battle;
 
 Please feel free to make Pull Requests, I would be happy to see where it can go
 
+Also check (react-tiny-little-store)[https://www.npmjs.com/package/react-tiny-little-store]
+
 ## Getting Started
 
 `npm install tiny-little-store` will get you started.
