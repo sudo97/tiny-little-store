@@ -52,6 +52,15 @@ ready...
 
   mutations.increment(); // but I am not sure anyone would prefer this
 ```
+
+Also since v1.2 exports `combineStores`, you pass there your stores like:
+```javascript
+  const store1 = createStore(init1);
+  const store2 = createStore(init2);
+
+  const rootStore = combineStores({ store1, store2 });
+```
+rootStore has only `subscribe` and `getState`, which work the same as from non-combined. you cannot create mutations or updateStore directly on combined stores. You should encapsulate those things for each store, and then use those methods, and combinedStore will only notify.
 ## NB
 Any mutations you create are syncronous, you can create custom methods(like Vuex actions), which would call desired mutations in asynchronous way.
 ```javascript
