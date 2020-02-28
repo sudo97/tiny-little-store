@@ -14,9 +14,11 @@ Also check [react-tiny-little-store](https://www.npmjs.com/package/react-tiny-li
 
 to init store just do this:
 ```javascript
+import createStore from "tiny-little-store";
+
 const store = createStore(initialState);
 ```
-Where store is an object containing these three methods:
+Where store is an object containing these five methods:
 ```javascript
 const { subscribe, updateStore, getState, mutation, mutationsObj } = store;
 ```
@@ -57,6 +59,7 @@ ready...
 
 Also since v1.2 exports `combineStores`, you pass there your stores like:
 ```javascript
+  import createStore, { combineStores } from "tiny-little-store"
   const store1 = createStore(init1);
   const store2 = createStore(init2);
 
